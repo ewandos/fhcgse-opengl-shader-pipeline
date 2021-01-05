@@ -3,11 +3,15 @@ project(cgse_ewert)
 
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/source")
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/lib")
-set(SOURCES "${SRC_DIR}/main.cpp")
+set(SOURCES "${SRC_DIR}/main.cpp" ${SRC_DIR}/shader.h ${SRC_DIR}/shader.cpp)
 
+# EXECUTABLES CONFIG
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE "${SRC_DIR}")
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
+
+#GLM
+include_directories(${LIB_DIR}/glm)
 
 # STB_IMAGE
 include_directories(${LIB_DIR}/stb_image)
