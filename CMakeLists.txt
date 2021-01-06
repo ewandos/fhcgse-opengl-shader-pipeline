@@ -3,7 +3,7 @@ project(cgse_ewert)
 
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/source")
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/lib")
-set(SOURCES "${SRC_DIR}/main.cpp" ${SRC_DIR}/shader.h ${SRC_DIR}/shader.cpp)
+set(SOURCES "${SRC_DIR}/main.cpp" ${SRC_DIR}/shader.h ${SRC_DIR}/shader.cpp lib/stb_image/std_image.cpp)
 
 # EXECUTABLES CONFIG
 add_executable(${PROJECT_NAME} ${SOURCES})
