@@ -10,8 +10,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd pizza_diffuse
-map_Ks pizza_specular
+map_Kd pizza_diffuse.jpg
+map_Ks pizza_specular.jpg
 
 newmtl PizzaPaddleBoard001_2K
 Ns 225.000000
@@ -22,5 +22,5 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd brett_diffuse
-map_Ks brett_specular
+map_Kd brett_diffuse.jpg
+map_Ks brett_specular.jpg
